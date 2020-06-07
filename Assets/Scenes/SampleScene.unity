@@ -354,6 +354,7 @@ MonoBehaviour:
   _force: 6
   _rigidbody2d: {fileID: 74010721}
   _speed: 3.5
+  _animator: {fileID: 74010724}
 --- !u!61 &74010720
 BoxCollider2D:
   m_ObjectHideFlags: 0

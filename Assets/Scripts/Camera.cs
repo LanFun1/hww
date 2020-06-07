@@ -5,14 +5,14 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     [SerializeField] private GameObject Character;
-    private Vector3 offset;
+    private Vector3 _offset;
     private void Start()
     {
-        offset = Character.transform.position + transform.position;
+        _offset = Character.transform.position + transform.position;
     }
 
     private void LateUpdate()
     {
-        transform.position = Character.transform.position + (offset / 10);
+        transform.position = Character.transform.position + (_offset / 10);
     }
 }
